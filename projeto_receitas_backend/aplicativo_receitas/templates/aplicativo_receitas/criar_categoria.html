@@ -1,0 +1,25 @@
+<!--  projeto_receitas_backend/aplicativo_receitas/templates/aplicativo_receitas/criar_categoria.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Criar Categoria</title>
+</head>
+<body>
+    <h1>Criar Categoria</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Criar Categoria</button>
+    </form>
+</body>
+</html>
+
+
+
+<!-- <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Criar Categoria</button>
+</form> -->
