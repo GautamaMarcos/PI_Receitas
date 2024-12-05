@@ -46,6 +46,9 @@ class SubcategoriaSerializer(serializers.ModelSerializer):
         # Cria uma nova subcategoria usando os dados validados
         subcategoria = Subcategoria.objects.create(**validated_data)
         return subcategoria
+    
+
+
 
 
 

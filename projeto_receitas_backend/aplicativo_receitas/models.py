@@ -39,6 +39,8 @@ class Receita(models.Model):
     avaliacao = models.IntegerField(default=0)
     autor = models.ForeignKey(User, on_delete=models.CASCADE, related_name='receitas')
     data_criacao = models.DateTimeField(auto_now_add=True)
+    imagem_url = models.URLField(max_length=200, blank=True, null=True) # Adiciona o campo imagem_url
+    
 
     def __str__(self):
         return self.titulo

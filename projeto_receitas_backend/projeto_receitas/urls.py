@@ -30,11 +30,6 @@ urlpatterns = [
     path('api/users/login/', UserViewSet.as_view({'post': 'login'}), name='user-login'),
     path('api/', include('aplicativo_receitas.urls')),
     path ('aplicativo_receitas/', include('aplicativo_receitas.urls')),
-
-    # path('aplicativo_receitas/', include('aplicativo_receitas.urls')),
-    # path('criar_categoria/', criar_categoria, name='criar_categoria'),
-    # path('criar_subcategoria/', criar_subcategoria, name='criar_subcategoria'),
-    # path('criar_receita/', criar_receita, name='criar_receita'),
 ]
 
     
